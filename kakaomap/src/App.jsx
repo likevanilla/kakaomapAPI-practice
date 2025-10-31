@@ -6,10 +6,8 @@ export default function App() {
   const [mapCenter] = useState({ lat: 37.566826, lng: 126.9786567 });
 
   return (
-    <div className="kmap-container">
-      <div className="kmap-mapWrapper">
-        <Map center={mapCenter} level={8} draggable className="kmap-map" />
-      </div>
+    <div className="mapWrapper">
+      <Map className="map" center={mapCenter} level={8} draggable />
     </div>
   );
 }
